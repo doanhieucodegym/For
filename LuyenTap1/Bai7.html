@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7 Viết sô in ra 10 só </title>
+</head>
+<body>
+<script>
+    function inso() {
+        for (let i = 1; i <= 100; i++) {
+            if (i % 3 != 0 && i % 5 !=0) {
+                document.write(i +"</br>");
+            }else if (i % 3 == 0 && i % 5 == 0) {
+                document.write(" FizzBuzz"+"</br>")
+
+            }
+            else if (i % 3 == 0) {
+                document.write(" Fizz" +"</br>");
+            }else if ( i % 5 ==0){
+                document.write(" Buzz"+"</br>")
+
+            }
+
+
+
+        }
+
+
+    }
+
+    inso();
+
+</script>
+</body>
+</html>

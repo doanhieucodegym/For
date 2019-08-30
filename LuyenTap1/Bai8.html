@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8 Game đoán số </title>
+</head>
+<body>
+<h3>Game đoán số </h3>
+<input type="button" onclick="choi();" id=" so" value="Play"/>
+
+<script>
+    function choi() {
+        let dem = 0;
+        while (true) {
+
+            let numberNhap =Number( prompt("  Mời nhập số bạn đoán ! "));
+            let numberCP = Math.round( Math.random()*10);
+           // document.write(numbrer1);
+            dem =dem +1;
+            if (numberNhap == numberCP) {
+                alert(" Bạn chọn đúng số ! Win Win");
+                break;
+
+            }else if(numberNhap < numberCP){
+                alert(" Số bạn  chọn  nhỏ hơn số  của  máy !")
+            }else {
+                alert("Số bạn  chọn lớn  hơn số  của  máy ! ")
+
+
+            }
+            if(dem >=3){
+                alert(" Bạn  đã thua vì  hết lần chọn");
+                alert(" Số của  máy  là "+numberCP );
+                break;
+            }
+
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>
